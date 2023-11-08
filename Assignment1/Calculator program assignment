@@ -26,16 +26,16 @@ while True:
         break
     
     elif user_input in ("+", "-", "*", "/"):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        no1 = float(input("Enter first number: "))
+        no2 = float(input("Enter second number: "))
 
         if user_input == "+":
-            print("Result: ", add(num1, num2))
+            print("Result: ", add(no1, no2))
         elif user_input == "-":
-            print("Result: ", subtract(num1, num2))
+            print("Result: ", subtract(no1, no2))
         elif user_input == "*":
-            print("Result: ", multiply(num1, num2))
+            print("Result: ", multiply(no1, no2))
         elif user_input == "/":
-            print("Result: ", divide(num1, num2))
+            print("Result: ", divide(no1, no2))
     else:
-        print("Invalid input. Please try again.")
+        print("Invalid input.Try again.")
