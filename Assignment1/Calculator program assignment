@@ -16,18 +16,21 @@ while True:
     print("Enter '*' For product")
     print("Enter '/' For division")
     print("Enter 'Quit' to end the program")
+
     user_input = input(":> ")
-    if user_input in ("+", "-", "*", "/"):
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
-    elif user_input == "+":
+    if user_input == "Quit":
+              break     
+    elif user_input in ("+", "-", "*", "/"):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if user_input == "+":
             print("Result: ", add(num1, num2))
-    elif user_input == "-":
+        elif user_input == "-":
             print("Result: ", subtract(num1, num2))
-    elif user_input == "*":
+        elif user_input == "*":
             print("Result: ", multiply(num1, num2))
-    elif user_input == "/":
+        elif user_input == "/":
             print("Result: ", divide(num1, num2))
-    elif user_input == "Quit":
-     print("Exiting calculator.")
-     break
+    else:
+        print("Error!")
